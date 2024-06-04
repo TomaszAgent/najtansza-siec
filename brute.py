@@ -78,14 +78,16 @@ def brute_generate(
 
 if __name__ == "__main__":
     test_cities = {
-        "A": 10,
+        "A": 20,
         "B": 0,
-        "C": -10
+        "C": -10,
+        "D": -10
     }
     test_distances = [
-        ("A", "B", 3),
-        ("B", "C", 5),
-        ("A", "C", 7)
+        ("A", "B", 4),
+        ("B", "C", 4),
+        ("A", "C", 7),
+        ("B", "D", 3)
     ]
 
     print(brute_generate(test_cities, test_distances))
